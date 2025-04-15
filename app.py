@@ -1,6 +1,7 @@
 # app.py
 
 import streamlit as st
+st.set_page_config(page_title="Trademark Search", layout="centered")
 import pandas as pd
 from fuzzywuzzy import fuzz
 
@@ -11,7 +12,6 @@ def load_data():
 
 df = load_data()
 
-st.set_page_config(page_title="Trademark Search", layout="centered")
 st.title("🔍 Simple Trademark Search Engine")
 
 # Search input
