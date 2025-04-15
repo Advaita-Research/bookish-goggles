@@ -7,7 +7,7 @@ from fuzzywuzzy import fuzz
 # Load the CSV file
 @st.cache_data
 def load_data():
-    return pd.read_csv("trademarks.csv")
+    return pd.read_csv("trademarks - Sheet1.csv")
 
 df = load_data()
 
